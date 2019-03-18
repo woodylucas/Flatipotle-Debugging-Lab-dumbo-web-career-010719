@@ -10,7 +10,7 @@ const ToppingForm = (props) => {
             <input
               id="mild"
               type="checkbox"
-              value="Mild Hot Sauce"
+              value={ props.toppings.value }
               name="toppings"
               checked={ props.toppings.includes('Mild Hot Sauce') }
               onChange={ props.handleChange }
@@ -25,7 +25,7 @@ const ToppingForm = (props) => {
             <input
               id="medium"
               type="checkbox"
-              value="Medium Hot Sauce"
+              value={ props.toppings.value }
               name="toppings"
               checked={ props.toppings.includes('Medium Hot Sauce') }
               onChange={ props.handleChange }
@@ -40,7 +40,7 @@ const ToppingForm = (props) => {
             <input
               id="hot"
               type="checkbox"
-              value="HOT Hot Sauce"
+              value={ props.toppings.value }
               name="toppings"
               checked={ props.toppings.includes('HOT Hot Sauce') }
               onChange={ props.handleChange }
@@ -55,7 +55,7 @@ const ToppingForm = (props) => {
             <input
               id="corn"
               type="checkbox"
-              value="Corn Salsa"
+              value={ props.toppings.value }
               name="toppings"
               checked={ props.toppings.includes('Corn Salsa') }
               onChange={ props.handleChange }
@@ -70,7 +70,7 @@ const ToppingForm = (props) => {
             <input
               id="sour cream"
               type="checkbox"
-              value="Sour Cream"
+              value={ props.toppings.value }
               name="toppings"
               checked={ props.toppings.includes('Sour Cream') }
               onChange={ props.handleChange }
@@ -85,7 +85,7 @@ const ToppingForm = (props) => {
             <input
               id="lettuce"
               type="checkbox"
-              value="Lettuce"
+              value={ props.toppings.value }
               name="toppings"
               checked={ props.toppings.includes('Lettuce') }
               onChange={ props.handleChange }
@@ -100,7 +100,7 @@ const ToppingForm = (props) => {
             <input
               id="guac"
               type="checkbox"
-              value="Guac"
+              value={ props.toppings.value }
               name="toppings"
               checked={ props.toppings.includes('Guac') }
               onChange={ props.handleChange }
@@ -115,7 +115,7 @@ const ToppingForm = (props) => {
             <input
               id="cheese"
               type="checkbox"
-              value="Cheese"
+              value={ props.toppings.value }
               name="toppings"
               checked={ props.toppings.includes('Cheese') }
               onChange={ props.handleChange }

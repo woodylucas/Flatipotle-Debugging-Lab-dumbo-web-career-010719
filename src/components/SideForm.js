@@ -10,7 +10,7 @@ const SideForm = (props) => {
             <input
               id="chips"
               type="checkbox"
-              value="Chips"
+              value={ props.sides.value }
               name="sides"
               checked={ props.sides.includes('Chips') }
               onChange={ props.handleChange }
@@ -25,7 +25,7 @@ const SideForm = (props) => {
             <input
               id="chips-salsa"
               type="checkbox"
-              value="Chips & Salsa"
+              value={ props.sides.value }
               name="sides"
               checked={ props.sides.includes('Chips & Salsa') }
               onChange={ props.handleChange }
@@ -40,7 +40,7 @@ const SideForm = (props) => {
             <input
               id="chips-guac"
               type="checkbox"
-              value="Chips & Guac"
+              value={ props.sides.value }
               name="sides"
               checked={ props.sides.includes('Chips & Guac') }
               onChange={ props.handleChange }
@@ -55,7 +55,7 @@ const SideForm = (props) => {
             <input
               id="chips-queso"
               type="checkbox"
-              value="Chips & Queso"
+              value={ props.sides.value }
               name="sides"
               checked={ props.sides.includes('Chips & Queso') }
               onChange={ props.handleChange }
@@ -70,7 +70,7 @@ const SideForm = (props) => {
             <input
               id="tortila"
               type="checkbox"
-              value="Tortilla"
+              value={ props.sides.value }
               name="sides"
               checked={ props.sides.includes('Tortilla') }
               onChange={ props.handleChange }
@@ -85,7 +85,7 @@ const SideForm = (props) => {
             <input
               id="taco"
               type="checkbox"
-              value="Taco"
+              value={ props.sides.value }
               name="sides"
               checked={ props.sides.includes('Taco') }
               onChange={ props.handleChange }
@@ -100,7 +100,7 @@ const SideForm = (props) => {
             <input
               id="drink"
               type="checkbox"
-              value="Fountain Drink"
+              value={ props.sides.value }
               name="sides"
               checked={ props.sides.includes('Fountain Drink') }
               onChange={ props.handleChange }
@@ -113,3 +113,5 @@ const SideForm = (props) => {
     </Fragment>
   )
 }
+
+export default SideForm
